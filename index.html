@@ -141,15 +141,15 @@
                 layers.push(marker);
                 prevMarker = marker;
 
-                // if(!prevUndefined) {
-                if (polyline == null) {
-                    polyline = L.polyline([[loc.lat, loc.lon]], {color: "#3388ff"}).addTo(mymap);
-                    layers.push(polyline);
-                } else {
-                    var latlon = L.latLng(loc.lat, loc.lon);
-                    polyline.addLatLng(latlon);
-                }
+                // // if(!prevUndefined) {
+                // if (polyline == null) {
+                //     polyline = L.polyline([[loc.lat, loc.lon]], {color: "#3388ff"}).addTo(mymap);
+                //     layers.push(polyline);
+                // } else {
+                //     var latlon = L.latLng(loc.lat, loc.lon);
+                //     polyline.addLatLng(latlon);
                 // }
+                // // }
             }
 
             if (loc.lat != undefined && loc.lon != undefined) {
