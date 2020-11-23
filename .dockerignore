@@ -1,0 +1,13 @@
+#.git
+#.gitignore
+#.idea
+#README.md
+
+# Ignore everything
+*
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!index.html
+!trace.js
