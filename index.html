@@ -135,12 +135,13 @@
                 tooltip = loc.hop.toString();
             }
 
-            var marker = L.marker([loc.lat, loc.lon], {title: loc.ip.toString()}).addTo(mymap);
-            marker.bindTooltip(tooltip, {permanent: true});
-            layers.push(marker);
-            prevMarker = marker;
+            if (loc.lat != prevLat && loc.lon != prevLon) {
+                var marker = L.marker([loc.lat, loc.lon], {title: loc.ip.toString()}).addTo(mymap);
+                marker.bindTooltip(tooltip, {permanent: true});
+                layers.push(marker);
+                prevMarker = marker;
 
-            // if(!prevUndefined) {
+                // if(!prevUndefined) {
                 if (polyline == null) {
                     polyline = L.polyline([[loc.lat, loc.lon]], {color: "#3388ff"}).addTo(mymap);
                     layers.push(polyline);
@@ -148,7 +149,8 @@
                     var latlon = L.latLng(loc.lat, loc.lon);
                     polyline.addLatLng(latlon);
                 }
-            // }
+                // }
+            }
 
             if (loc.lat != undefined && loc.lon != undefined) {
                 prevLat = loc.lat;
