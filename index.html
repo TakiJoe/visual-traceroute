@@ -64,7 +64,7 @@
             {attribution: '© OpenStreetMap', detectRetina: true}).addTo(mymap);
         var polyline = null;
 
-        var socket = new WebSocket("ws://127.0.0.1:8080/");
+        var socket = new WebSocket("ws://" + window.location.hostname + ":8080/");
         socket.onerror = (error) => {
             alert("Error! Trace has stopped")
         };

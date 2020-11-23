@@ -1,5 +1,5 @@
 # Visual Traceroute
-<img alt="Visual Traceroute" src="https://user-images.githubusercontent.com/14234849/99977154-92759d00-2da4-11eb-8443-16b48277f3b7.png">
+<img width="100%" alt="Visual Traceroute" src="https://user-images.githubusercontent.com/14234849/99977154-92759d00-2da4-11eb-8443-16b48277f3b7.png">
 
 This is a simple visual traceroute app written in javascript that runs in
 the browser. The traceroute part written using nodejs runs as a local web
